@@ -7,7 +7,7 @@ const server = express();
 
 server.use(morgan('dev'));
 server.use(express.json());
-server.use('/characters', router);
+server.use('/planets',router);
 server.use('*', (req, res) => {
     throw ClientErrors.badRequest('Route not found 404')
 })
