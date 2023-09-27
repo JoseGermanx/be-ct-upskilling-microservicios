@@ -28,7 +28,7 @@ services:
     build: ./films
     ports:
       - "8002:8002"
-  
+
   database:
     container_name: database
     restart: always
